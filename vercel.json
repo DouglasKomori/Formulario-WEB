@@ -12,5 +12,5 @@
         "dest": "server.js"
       }
     ],
-    "ignoreCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then exit 1; fi"
+    "ignoreCommand": "[ \"$VERCEL_ENV\" != \"production\" ] || exit 1"
 }
